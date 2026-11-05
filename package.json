@@ -1,0 +1,16 @@
+{
+  "name": "api-pedidos",
+  "version": "1.0.0",
+  "description": "API pequeña de pedidos para la Evidencia 3 (entorno reproducible)",
+  "private": true,
+  "engines": {
+    "node": ">=20.6.0"
+  },
+  "scripts": {
+    "verificar": "node scripts/verificar-entorno.js",
+    "start": "node --env-file=.env src/servidor.js",
+    "salud": "node --env-file=.env scripts/salud.js",
+    "test": "node --test",
+    "revisar": "node scripts/revisar.js"
+  }
+}
